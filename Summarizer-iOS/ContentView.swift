@@ -41,6 +41,8 @@ struct ContentView: View {
                     .padding()
             case "PDF":
                 TextField("Enter prompt", text: $userPrompt)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
                 Button(action: selectPDF) {
                     Text("Select PDF")
                         .padding()
